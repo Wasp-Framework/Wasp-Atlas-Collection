@@ -150,23 +150,40 @@ function writeSystemReadmes(systems) {
 function buildReadmeSection(systems) {
   const lines = [];
   lines.push("");
-  lines.push("| Preview | System | Tags | Files |");
-  lines.push("|---|---|---|---|");
+  lines.push(`<table width="100%">`);
+  lines.push(`  <thead>`);
+  lines.push(`    <tr>`);
+  lines.push(`      <th width="140">Preview</th>`);
+  lines.push(`      <th>System</th>`);
+  lines.push(`      <th width="220">Tags</th>`);
+  lines.push(`      <th width="160">Files</th>`);
+  lines.push(`    </tr>`);
+  lines.push(`  </thead>`);
+  lines.push(`  <tbody>`);
 
   for (const s of systems) {
     const tags = s.tags.length ? mdEscape(s.tags.join(", ")) : "";
     const author = s.author ? `<br/><sub>by ${mdEscape(s.author)}</sub>` : "";
     const folderUrl = `systems/${s.slug}`;
-    const name = `**[${mdEscape(s.name)}](${folderUrl})**${author}`;
+    const name = `<strong><a href="${folderUrl}">${mdEscape(s.name)}</a></strong>${author}`;
     const preview = `<img src="${s.thumbnail}" width="120" />`;
-    const files = `[aggregation](${s.aggregation_url}) · [meta](${s.meta_url})`;
+    const files = `<a href="${s.aggregation_url}">aggregation</a> · <a href="${s.meta_url}">meta</a>`;
 
-    lines.push(`| ${preview} | ${name} | ${tags} | ${files} |`);
+    lines.push(`    <tr>`);
+    lines.push(`      <td>${preview}</td>`);
+    lines.push(`      <td>${name}</td>`);
+    lines.push(`      <td>${tags}</td>`);
+    lines.push(`      <td>${files}</td>`);
+    lines.push(`    </tr>`);
   }
 
+  lines.push(`  </tbody>`);
+  lines.push(`</table>`);
   lines.push("");
+
   return lines.join("\n");
 }
+
 
 function updateReadme(systems) {
   assert(exists(README_PATH), "Missing README.md");
