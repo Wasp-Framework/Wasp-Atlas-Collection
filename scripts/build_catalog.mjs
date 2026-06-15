@@ -156,7 +156,8 @@ function buildReadmeSection(systems) {
   for (const s of systems) {
     const tags = s.tags.length ? mdEscape(s.tags.join(", ")) : "";
     const author = s.author ? `<br/><sub>by ${mdEscape(s.author)}</sub>` : "";
-    const name = `**${mdEscape(s.name)}**${author}`;
+    const folderUrl = `systems/${s.slug}`;
+    const name = `**[${mdEscape(s.name)}](${folderUrl})**${author}`;
     const preview = `<img src="${s.thumbnail}" width="120" />`;
     const files = `[aggregation](${s.aggregation_url}) · [meta](${s.meta_url})`;
 
