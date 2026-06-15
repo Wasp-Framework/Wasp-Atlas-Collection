@@ -146,6 +146,7 @@ function writeSystemReadmes(systems) {
   }
 }
 
+
 function buildReadmeSection(systems) {
   const lines = [];
   lines.push("");
@@ -154,10 +155,9 @@ function buildReadmeSection(systems) {
 
   for (const s of systems) {
     const tags = s.tags.length ? mdEscape(s.tags.join(", ")) : "";
-    const desc = s.description ? ` — ${mdEscape(s.description)}` : "";
     const author = s.author ? `<br/><sub>by ${mdEscape(s.author)}</sub>` : "";
-    const name = `**${mdEscape(s.name)}**${desc}${author}`;
-    const preview = `![](${s.thumbnail})`;
+    const name = `**${mdEscape(s.name)}**${author}`;
+    const preview = `<img src="${s.thumbnail}" width="120" />`;
     const files = `[aggregation](${s.aggregation_url}) · [meta](${s.meta_url})`;
 
     lines.push(`| ${preview} | ${name} | ${tags} | ${files} |`);
