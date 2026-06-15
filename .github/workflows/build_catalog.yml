@@ -40,6 +40,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add catalog/catalog.json README.md
+          git add catalog/catalog.json README.md systems/**/README.md
           git commit -m "chore: rebuild catalog + README"
           git push

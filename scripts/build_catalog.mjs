@@ -91,6 +91,61 @@ function mdEscape(text) {
   return String(text).replace(/\|/g, "\\|").trim();
 }
 
+function buildSystemReadme(system) {
+  const tags = system.tags.length
+    ? system.tags.map(t => `\`${t}\``).join(" ")
+    : "_No tags_";
+
+  const description = system.description
+    ? system.description
+    : "_No description provided._";
+
+  const author = system.author
+    ? system.author
+    : "_Unknown author_";
+
+  const license = system.license
+    ? system.license
+    : "_No license specified_";
+
+  return `# ${system.name}
+
+![${system.name}](screenshots/00_thumb.png)
+
+## Description
+
+${description}
+
+## Information
+
+| Field | Value |
+|---|---|
+| Slug | \`${system.slug}\` |
+| Author | ${author} |
+| License | ${license} |
+| Tags | ${tags} |
+
+## Files
+
+- [aggregation.json](aggregation.json)
+- [meta.json](meta.json)
+
+---
+
+This README was generated automatically from \`meta.json\`.
+`;
+}
+
+function writeSystemReadmes(systems) {
+  for (const system of systems) {
+    const sysDir = path.join(SYSTEMS_DIR, system.slug);
+    const readmePath = path.join(sysDir, "README.md");
+    const content = buildSystemReadme(system);
+
+    fs.writeFileSync(readmePath, content, "utf8");
+  }
+}
+
 function buildReadmeSection(systems) {
   const lines = [];
   lines.push("");
@@ -133,5 +188,8 @@ function updateReadme(systems) {
 const systems = buildSystemsIndex();
 writeCatalog(systems);
 updateReadme(systems);
+writeSystemReadmes(systems);
 
-console.log(`Generated ${path.relative(REPO_ROOT, CATALOG_PATH)} and updated README for ${systems.length} systems.`);
+console.log(
+  `Generated ${path.relative(REPO_ROOT, CATALOG_PATH)}, updated root README, and generated system READMEs for ${systems.length} systems.`
+);
