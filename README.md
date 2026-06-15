@@ -5,12 +5,47 @@ Collection of reusable Aggregation systems for the Wasp Framework
 
 <!-- AUTO-LIST:START -->
 
-| Preview | System | Tags | Files |
-|---|---|---|---|
-| <img src="systems/brio-chamfer/screenshots/00_thumb.png" width="120" /> | **[Brio Rails](systems/brio-chamfer)**<br/><sub>by Roger Winkler</sub> | construction toys, wood | [aggregation](systems/brio-chamfer/aggregation.json) · [meta](systems/brio-chamfer/meta.json) |
-| <img src="systems/corner-shape/screenshots/00_thumb.png" width="120" /> | **[Corner Shape](systems/corner-shape)**<br/><sub>by Andrea Rossi</sub> | examples, simple | [aggregation](systems/corner-shape/aggregation.json) · [meta](systems/corner-shape/meta.json) |
-| <img src="systems/gyrobifastigium/screenshots/00_thumb.png" width="120" /> | **[Gyrobifastigium](systems/gyrobifastigium)**<br/><sub>by Andrea Rossi</sub> | geometry, platonic | [aggregation](systems/gyrobifastigium/aggregation.json) · [meta](systems/gyrobifastigium/meta.json) |
-| <img src="systems/octahedra/screenshots/00_thumb.png" width="120" /> | **[Octahedra](systems/octahedra)**<br/><sub>by Roger Winkler</sub> | geometry, testing | [aggregation](systems/octahedra/aggregation.json) · [meta](systems/octahedra/meta.json) |
-| <img src="systems/stacked-sticks/screenshots/00_thumb.png" width="120" /> | **[Stacked Sticks](systems/stacked-sticks)**<br/><sub>by Andrea Rossi</sub> | examples, simple | [aggregation](systems/stacked-sticks/aggregation.json) · [meta](systems/stacked-sticks/meta.json) |
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="140">Preview</th>
+      <th>System</th>
+      <th width="220">Tags</th>
+      <th width="160">Files</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="systems/brio-chamfer/screenshots/00_thumb.png" width="120" /></td>
+      <td><strong><a href="systems/brio-chamfer">Brio Rails</a></strong><br/><sub>by Roger Winkler</sub></td>
+      <td>construction toys, wood</td>
+      <td><a href="systems/brio-chamfer/aggregation.json">aggregation</a> · <a href="systems/brio-chamfer/meta.json">meta</a></td>
+    </tr>
+    <tr>
+      <td><img src="systems/corner-shape/screenshots/00_thumb.png" width="120" /></td>
+      <td><strong><a href="systems/corner-shape">Corner Shape</a></strong><br/><sub>by Andrea Rossi</sub></td>
+      <td>examples, simple</td>
+      <td><a href="systems/corner-shape/aggregation.json">aggregation</a> · <a href="systems/corner-shape/meta.json">meta</a></td>
+    </tr>
+    <tr>
+      <td><img src="systems/gyrobifastigium/screenshots/00_thumb.png" width="120" /></td>
+      <td><strong><a href="systems/gyrobifastigium">Gyrobifastigium</a></strong><br/><sub>by Andrea Rossi</sub></td>
+      <td>geometry, platonic</td>
+      <td><a href="systems/gyrobifastigium/aggregation.json">aggregation</a> · <a href="systems/gyrobifastigium/meta.json">meta</a></td>
+    </tr>
+    <tr>
+      <td><img src="systems/octahedra/screenshots/00_thumb.png" width="120" /></td>
+      <td><strong><a href="systems/octahedra">Octahedra</a></strong><br/><sub>by Roger Winkler</sub></td>
+      <td>geometry, testing</td>
+      <td><a href="systems/octahedra/aggregation.json">aggregation</a> · <a href="systems/octahedra/meta.json">meta</a></td>
+    </tr>
+    <tr>
+      <td><img src="systems/stacked-sticks/screenshots/00_thumb.png" width="120" /></td>
+      <td><strong><a href="systems/stacked-sticks">Stacked Sticks</a></strong><br/><sub>by Andrea Rossi</sub></td>
+      <td>examples, simple</td>
+      <td><a href="systems/stacked-sticks/aggregation.json">aggregation</a> · <a href="systems/stacked-sticks/meta.json">meta</a></td>
+    </tr>
+  </tbody>
+</table>
 
 <!-- AUTO-LIST:END -->
