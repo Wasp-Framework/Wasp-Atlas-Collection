@@ -153,10 +153,10 @@ function buildReadmeSection(systems) {
   lines.push(`<table width="100%">`);
   lines.push(`  <thead>`);
   lines.push(`    <tr>`);
-  lines.push(`      <th width="140">Preview</th>`);
-  lines.push(`      <th>System</th>`);
-  lines.push(`      <th width="220">Tags</th>`);
-  lines.push(`      <th width="160">Files</th>`);
+  lines.push(`      <th width="130" align="left">Preview</th>`);
+  lines.push(`      <th width="100%" align="left">System</th>`);
+  lines.push(`      <th width="220" align="left">Tags</th>`);
+  lines.push(`      <th width="150" align="left">Files</th>`);
   lines.push(`    </tr>`);
   lines.push(`  </thead>`);
   lines.push(`  <tbody>`);
@@ -165,15 +165,16 @@ function buildReadmeSection(systems) {
     const tags = s.tags.length ? mdEscape(s.tags.join(", ")) : "";
     const author = s.author ? `<br/><sub>by ${mdEscape(s.author)}</sub>` : "";
     const folderUrl = `systems/${s.slug}`;
+
     const name = `<strong><a href="${folderUrl}">${mdEscape(s.name)}</a></strong>${author}`;
-    const preview = `<img src="${s.thumbnail}" width="120" />`;
-    const files = `<a href="${s.aggregation_url}">aggregation</a> · <a href="${s.meta_url}">meta</a>`;
+    const preview = `<img src="${s.thumbnail}" width="110" />`;
+    const files = `<a href="${s.aggregation_url}">aggregation</a><br/><a href="${s.meta_url}">meta</a>`;
 
     lines.push(`    <tr>`);
-    lines.push(`      <td>${preview}</td>`);
-    lines.push(`      <td>${name}</td>`);
-    lines.push(`      <td>${tags}</td>`);
-    lines.push(`      <td>${files}</td>`);
+    lines.push(`      <td width="130">${preview}</td>`);
+    lines.push(`      <td width="100%">${name}</td>`);
+    lines.push(`      <td width="220">${tags}</td>`);
+    lines.push(`      <td width="150">${files}</td>`);
     lines.push(`    </tr>`);
   }
 
