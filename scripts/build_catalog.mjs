@@ -150,37 +150,27 @@ function writeSystemReadmes(systems) {
 function buildReadmeSection(systems) {
   const lines = [];
   lines.push("");
-  lines.push(`<table width="100%">`);
-  lines.push(`  <thead>`);
-  lines.push(`    <tr>`);
-  lines.push(`      <th width="130" align="left">Preview</th>`);
-  lines.push(`      <th width="100%" align="left">System</th>`);
-  lines.push(`      <th width="220" align="left">Tags</th>`);
-  lines.push(`      <th width="150" align="left">Files</th>`);
-  lines.push(`    </tr>`);
-  lines.push(`  </thead>`);
-  lines.push(`  <tbody>`);
 
   for (const s of systems) {
-    const tags = s.tags.length ? mdEscape(s.tags.join(", ")) : "";
-    const author = s.author ? `<br/><sub>by ${mdEscape(s.author)}</sub>` : "";
+    const tags = s.tags.length ? s.tags.map(t => `\`${mdEscape(t)}\``).join(" ") : "";
+    const author = s.author ? `by ${mdEscape(s.author)}` : "";
     const folderUrl = `systems/${s.slug}`;
 
-    const name = `<strong><a href="${folderUrl}">${mdEscape(s.name)}</a></strong>${author}`;
-    const preview = `<img src="${s.thumbnail}" width="110" />`;
-    const files = `<a href="${s.aggregation_url}">aggregation</a><br/><a href="${s.meta_url}">meta</a>`;
-
-    lines.push(`    <tr>`);
-    lines.push(`      <td width="130">${preview}</td>`);
-    lines.push(`      <td width="100%">${name}</td>`);
-    lines.push(`      <td width="220">${tags}</td>`);
-    lines.push(`      <td width="150">${files}</td>`);
-    lines.push(`    </tr>`);
+    lines.push(`<table width="100%">`);
+    lines.push(`  <tr>`);
+    lines.push(`    <td width="90">`);
+    lines.push(`      <img src="${s.thumbnail}" width="72" />`);
+    lines.push(`    </td>`);
+    lines.push(`    <td>`);
+    lines.push(`      <strong><a href="${folderUrl}">${mdEscape(s.name)}</a></strong><br/>`);
+    if (author) lines.push(`      <sub>${author}</sub><br/>`);
+    if (tags) lines.push(`      ${tags}<br/>`);
+    lines.push(`      <a href="${s.aggregation_url}">aggregation.json</a> · <a href="${s.meta_url}">meta.json</a>`);
+    lines.push(`    </td>`);
+    lines.push(`  </tr>`);
+    lines.push(`</table>`);
+    lines.push("");
   }
-
-  lines.push(`  </tbody>`);
-  lines.push(`</table>`);
-  lines.push("");
 
   return lines.join("\n");
 }
