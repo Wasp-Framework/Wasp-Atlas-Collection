@@ -136,6 +136,7 @@ This README was generated automatically from \`meta.json\`.
 `;
 }
 
+
 function writeSystemReadmes(systems) {
   for (const system of systems) {
     const sysDir = path.join(SYSTEMS_DIR, system.slug);
@@ -146,31 +147,63 @@ function writeSystemReadmes(systems) {
   }
 }
 
+function buildSystemCard(s) {
+  const tags = s.tags.length
+    ? s.tags.map(t => `<code>${mdEscape(t)}</code>`).join(" ")
+    : "";
+
+  const author = s.author
+    ? `<sub>by ${mdEscape(s.author)}</sub><br/>`
+    : "";
+
+  const folderUrl = `systems/${s.slug}`;
+
+  return `
+<table>
+  <tr>
+    <td width="90">
+      <img src="${s.thumbnail}" width="72" />
+    </td>
+    <td>
+      <strong><a href="${folderUrl}">${mdEscape(s.name)}</a></strong><br/>
+      ${author}
+      ${tags ? `${tags}<br/>` : ""}
+      <a href="${s.aggregation_url}">aggregation.json</a> · <a href="${s.meta_url}">meta.json</a>
+    </td>
+  </tr>
+</table>`;
+}
+
 
 function buildReadmeSection(systems) {
   const lines = [];
   lines.push("");
+  lines.push(`<table width="100%">`);
+  lines.push(`  <tbody>`);
 
-  for (const s of systems) {
-    const tags = s.tags.length ? s.tags.map(t => `\`${mdEscape(t)}\``).join(" ") : "";
-    const author = s.author ? `by ${mdEscape(s.author)}` : "";
-    const folderUrl = `systems/${s.slug}`;
+  for (let i = 0; i < systems.length; i += 2) {
+    const left = systems[i];
+    const right = systems[i + 1];
 
-    lines.push(`<table width="100%">`);
-    lines.push(`  <tr>`);
-    lines.push(`    <td width="90">`);
-    lines.push(`      <img src="${s.thumbnail}" width="72" />`);
-    lines.push(`    </td>`);
-    lines.push(`    <td>`);
-    lines.push(`      <strong><a href="${folderUrl}">${mdEscape(s.name)}</a></strong><br/>`);
-    if (author) lines.push(`      <sub>${author}</sub><br/>`);
-    if (tags) lines.push(`      ${tags}<br/>`);
-    lines.push(`      <a href="${s.aggregation_url}">aggregation.json</a> · <a href="${s.meta_url}">meta.json</a>`);
-    lines.push(`    </td>`);
-    lines.push(`  </tr>`);
-    lines.push(`</table>`);
-    lines.push("");
+    lines.push(`    <tr>`);
+    lines.push(`      <td width="50%" valign="top">`);
+    lines.push(buildSystemCard(left));
+    lines.push(`      </td>`);
+
+    lines.push(`      <td width="50%" valign="top">`);
+    if (right) {
+      lines.push(buildSystemCard(right));
+    } else {
+      lines.push(`&nbsp;`);
+    }
+    lines.push(`      </td>`);
+
+    lines.push(`    </tr>`);
   }
+
+  lines.push(`  </tbody>`);
+  lines.push(`</table>`);
+  lines.push("");
 
   return lines.join("\n");
 }
