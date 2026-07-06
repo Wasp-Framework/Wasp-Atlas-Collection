@@ -1,4 +1,4 @@
-# Wasp-Atlas
+# Wasp-Atlas Collection
 Collection of reusable Aggregation systems for the Wasp Framework
 
 ## Available systems
