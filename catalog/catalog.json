@@ -1,76 +1,103 @@
 {
-  "generated_at": "2026-07-06T12:38:21.785Z",
+  "generated_at": "2026-08-18T18:38:41.806Z",
   "count": 5,
   "systems": [
     {
-      "slug": "brio-chamfer",
-      "name": "Brio Rails",
-      "description": "Brio rails aggregation with chamfered colliders. Created this example during the development of WaspJS.",
+      "slug": "branching-sticks",
+      "name": "branching-sticks",
+      "description": {
+        "short": "Branching Stick aggregation example from the Wasp Example Files collection.",
+        "long": ""
+      },
       "tags": [
-        "construction toys",
-        "wood"
+        "example"
       ],
-      "license": "",
-      "author": "Roger Winkler",
-      "thumbnail": "systems/brio-chamfer/screenshots/00_thumb.png",
-      "aggregation_url": "systems/brio-chamfer/aggregation.json",
-      "meta_url": "systems/brio-chamfer/meta.json"
+      "license": {
+        "value": "GPL-3.0"
+      },
+      "author": "",
+      "thumbnail": "systems/branching-sticks/screenshots/00_thumb.png",
+      "aggregation_url": "systems/branching-sticks/aggregation.json",
+      "meta_url": "systems/branching-sticks/meta.json"
+    },
+    {
+      "slug": "brio-rails",
+      "name": "brio-rails",
+      "description": {
+        "short": "Brio rails aggregation with chamfered colliders. Created this example during the development of WaspJS.",
+        "long": ""
+      },
+      "tags": [
+        "toy",
+        "construction kit",
+        "brio"
+      ],
+      "license": {
+        "value": "MIT"
+      },
+      "author": "",
+      "thumbnail": "systems/brio-rails/screenshots/00_thumb.png",
+      "aggregation_url": "systems/brio-rails/aggregation.json",
+      "meta_url": "systems/brio-rails/meta.json"
     },
     {
       "slug": "corner-shape",
-      "name": "Corner Shape",
-      "description": "Corner aggregation example.",
+      "name": "corner-shape",
+      "description": {
+        "short": "Corner shape example from the Wasp Example Files collection.",
+        "long": ""
+      },
       "tags": [
         "examples",
         "simple"
       ],
-      "license": "",
-      "author": "Andrea Rossi",
+      "license": {
+        "value": "GPL-3.0"
+      },
+      "author": "",
       "thumbnail": "systems/corner-shape/screenshots/00_thumb.png",
       "aggregation_url": "systems/corner-shape/aggregation.json",
       "meta_url": "systems/corner-shape/meta.json"
     },
     {
       "slug": "gyrobifastigium",
-      "name": "Gyrobifastigium",
-      "description": "Space filling aggregation of Gyrobifastigium solids",
+      "name": "gyrobifastigium",
+      "description": {
+        "short": "Space filling aggregation of Gyrobifastigium solids, from the Wasp Example Files collection.",
+        "long": ""
+      },
       "tags": [
         "geometry",
-        "platonic"
+        "solids",
+        "space filling"
       ],
-      "license": "MIT",
-      "author": "Andrea Rossi",
+      "license": {
+        "value": "GPL-3.0"
+      },
+      "author": "",
       "thumbnail": "systems/gyrobifastigium/screenshots/00_thumb.png",
       "aggregation_url": "systems/gyrobifastigium/aggregation.json",
       "meta_url": "systems/gyrobifastigium/meta.json"
     },
     {
-      "slug": "octahedra",
-      "name": "Octahedra",
-      "description": "Default example",
+      "slug": "vertex-octahedra",
+      "name": "vertex-octahedra",
+      "description": {
+        "short": "Platonic Octahedra solids aggregation, joined at the vertices. From the Wasp Example Files collection.",
+        "long": ""
+      },
       "tags": [
         "geometry",
-        "testing"
+        "platonic",
+        "example"
       ],
-      "license": "MIT",
-      "author": "Roger Winkler",
-      "thumbnail": "systems/octahedra/screenshots/00_thumb.png",
-      "aggregation_url": "systems/octahedra/aggregation.json",
-      "meta_url": "systems/octahedra/meta.json"
-    },
-    {
-      "slug": "stacked-sticks",
-      "name": "Stacked Sticks",
-      "description": "Stick aggregation example from WASP basic examples.",
-      "tags": [
-        "examples",
-        "simple"
-      ],
-      "license": "",
-      "author": "Andrea Rossi",
-      "thumbnail": "systems/stacked-sticks/screenshots/00_thumb.png",
-      "aggregation_url": "systems/stacked-sticks/aggregation.json",
-      "meta_url": "systems/stacked-sticks/meta.json"
+      "license": {
+        "value": "GPL-3.0"
+      },
+      "author": "",
+      "thumbnail": "systems/vertex-octahedra/screenshots/00_thumb.png",
+      "aggregation_url": "systems/vertex-octahedra/aggregation.json",
+      "meta_url": "systems/vertex-octahedra/meta.json"
     }
   ]
 }
