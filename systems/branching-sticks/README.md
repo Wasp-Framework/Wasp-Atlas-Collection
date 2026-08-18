@@ -8,11 +8,6 @@ Branching Stick aggregation example from the Wasp Example Files collection.
 
 ## Information
 
-## Information
-
-| Field | Value |
-|---|---|
-| Slug | `branching-sticks` |
 | Field | Value |
 |---|---|
 | Slug | `branching-sticks` |
@@ -23,8 +18,6 @@ Branching Stick aggregation example from the Wasp Example Files collection.
 | Units | Millimeters |
 | Parts | 2 |
 | Rules | 100 |
-
-## Files
 
 ## Files
 

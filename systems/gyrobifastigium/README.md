@@ -8,11 +8,6 @@ Space filling aggregation of Gyrobifastigium solids, from the Wasp Example Files
 
 ## Information
 
-## Information
-
-| Field | Value |
-|---|---|
-| Slug | `gyrobifastigium` |
 | Field | Value |
 |---|---|
 | Slug | `gyrobifastigium` |
@@ -23,8 +18,6 @@ Space filling aggregation of Gyrobifastigium solids, from the Wasp Example Files
 | Units | Centimeters |
 | Parts | 1 |
 | Rules | 24 |
-
-## Files
 
 ## Files
 

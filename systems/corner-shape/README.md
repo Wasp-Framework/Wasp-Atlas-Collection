@@ -8,11 +8,6 @@ Corner shape example from the Wasp Example Files collection.
 
 ## Information
 
-## Information
-
-| Field | Value |
-|---|---|
-| Slug | `corner-shape` |
 | Field | Value |
 |---|---|
 | Slug | `corner-shape` |
@@ -23,8 +18,6 @@ Corner shape example from the Wasp Example Files collection.
 | Units | Millimeters |
 | Parts | 1 |
 | Rules | 16 |
-
-## Files
 
 ## Files
 

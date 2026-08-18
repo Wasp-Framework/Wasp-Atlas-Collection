@@ -8,11 +8,6 @@ Brio rails aggregation with chamfered colliders. Created this example during the
 
 ## Information
 
-## Information
-
-| Field | Value |
-|---|---|
-| Slug | `brio-rails` |
 | Field | Value |
 |---|---|
 | Slug | `brio-rails` |
@@ -23,8 +18,6 @@ Brio rails aggregation with chamfered colliders. Created this example during the
 | Units | Millimeters |
 | Parts | 5 |
 | Rules | 70 |
-
-## Files
 
 ## Files
 
