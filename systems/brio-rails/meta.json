@@ -1,0 +1,40 @@
+{
+  "id": "sha256:d9b5081ce38cfa0e401677c0090f348fbd16ac5af65c8816cd767294299ed841",
+  "slug": "brio-rails",
+  "title": "Brio Rails",
+  "created_at": "2026-08-18T18:17:10.316Z",
+  "status": "pending",
+  "authors": [
+    {
+      "name": "Roger Winkler",
+      "affiliation": "",
+      "url": "https://rogerwinkler.de/"
+    }
+  ],
+  "license": {
+    "value": "MIT"
+  },
+  "description": {
+    "short": "Brio rails aggregation with chamfered colliders. Created this example during the development of WaspJS.",
+    "long": ""
+  },
+  "tags": [
+    "toy",
+    "construction kit",
+    "brio"
+  ],
+  "software": "v0.6...",
+  "units": "Millimeters",
+  "metrics": {
+    "parts_total": 5,
+    "rules_total": 70
+  },
+  "files": {
+    "aggregation": "brio-rails/aggregation.json",
+    "meta": "brio-rails/meta.json",
+    "thumbnail": "brio-rails/00_thumb.png"
+  },
+  "source": {
+    "submission": "google-form"
+  }
+}

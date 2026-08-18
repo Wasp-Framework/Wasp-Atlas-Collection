@@ -44,7 +44,7 @@ function buildSystemsIndex() {
 
     const aggregationPath = path.join(sysDir, "aggregation.json");
     const metaPath = path.join(sysDir, "meta.json");
-    const thumbPath = path.join(sysDir, "screenshots", "00_thumb.png");
+    const thumbPath = path.join(sysDir, "00_thumb.png");
 
     // required files
     assert(exists(aggregationPath), `Missing ${path.relative(REPO_ROOT, aggregationPath)}`);
