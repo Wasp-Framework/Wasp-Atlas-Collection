@@ -8,6 +8,11 @@ Platonic Octahedra solids aggregation, joined at the vertices. From the Wasp Exa
 
 ## Information
 
+## Information
+
+| Field | Value |
+|---|---|
+| Slug | `vertex-octahedra` |
 | Field | Value |
 |---|---|
 | Slug | `vertex-octahedra` |
@@ -18,6 +23,8 @@ Platonic Octahedra solids aggregation, joined at the vertices. From the Wasp Exa
 | Units | Millimeters |
 | Parts | 1 |
 | Rules | 6 |
+
+## Files
 
 ## Files
 

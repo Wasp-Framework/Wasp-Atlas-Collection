@@ -15,16 +15,20 @@
           "url": "https://thecomputationalhive.com/"
         }
       ],
-      "license": {
-        "value": "GPL-3.0"
-      },
       "description": {
         "short": "Branching Stick aggregation example from the Wasp Example Files collection.",
         "long": ""
       },
       "tags": [
         "example"
+      ]
       ],
+      "license": {
+        "value": "GPL-3.0"
+      },
+      "license": {
+        "value": "GPL-3.0"
+      },
       "software": "v0.6...",
       "units": "Millimeters",
       "metrics": {
@@ -39,6 +43,9 @@
       "source": {
         "submission": "google-form"
       }
+    },
+    {
+      "id": "sha256:d9b5081ce38cfa0e401677c0090f348fbd16ac5af65c8816cd767294299ed841",
     },
     {
       "id": "sha256:d9b5081ce38cfa0e401677c0090f348fbd16ac5af65c8816cd767294299ed841",
@@ -83,6 +90,9 @@
     {
       "id": "sha256:5d66a962ca894e64f2363b96b6e8979aafd97dd15f3dea170e7d92f9d7de52e2",
       "slug": "corner-shape",
+    {
+      "id": "sha256:5d66a962ca894e64f2363b96b6e8979aafd97dd15f3dea170e7d92f9d7de52e2",
+      "slug": "corner-shape",
       "title": "Corner Shape",
       "created_at": "2026-08-18T18:24:01.544Z",
       "status": "pending",
@@ -96,6 +106,14 @@
       "license": {
         "value": "GPL-3.0"
       },
+      "description": {
+        "short": "Corner shape example from the Wasp Example Files collection.",
+        "long": ""
+      },
+      "tags": [
+        "examples",
+        "simple"
+      ]
       "description": {
         "short": "Corner shape example from the Wasp Example Files collection.",
         "long": ""
@@ -121,6 +139,12 @@
     },
     {
       "id": "sha256:923ee2e22333b88a50592c8158e159f6432e3718e168a8b24af14f37f083b921",
+    },
+    {
+      "id": "sha256:923ee2e22333b88a50592c8158e159f6432e3718e168a8b24af14f37f083b921",
+      "slug": "gyrobifastigium",
+    {
+      "id": "sha256:923ee2e22333b88a50592c8158e159f6432e3718e168a8b24af14f37f083b921",
       "slug": "gyrobifastigium",
       "title": "Gyrobifastigium",
       "created_at": "2026-08-18T18:36:59.692Z",
@@ -135,6 +159,15 @@
       "license": {
         "value": "GPL-3.0"
       },
+      "description": {
+        "short": "Space filling aggregation of Gyrobifastigium solids, from the Wasp Example Files collection.",
+        "long": ""
+      },
+      "tags": [
+        "geometry",
+        "solids",
+        "space filling"
+      ]
       "description": {
         "short": "Space filling aggregation of Gyrobifastigium solids, from the Wasp Example Files collection.",
         "long": ""
@@ -175,6 +208,15 @@
       "license": {
         "value": "GPL-3.0"
       },
+      "description": {
+        "short": "Platonic Octahedra solids aggregation, joined at the vertices. From the Wasp Example Files collection.",
+        "long": ""
+      },
+      "tags": [
+        "geometry",
+        "platonic",
+        "example"
+      ]
       "description": {
         "short": "Platonic Octahedra solids aggregation, joined at the vertices. From the Wasp Example Files collection.",
         "long": ""
