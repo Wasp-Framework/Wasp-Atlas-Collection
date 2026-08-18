@@ -13,13 +13,13 @@ Collection of reusable Aggregation systems for the Wasp Framework
 <table>
   <tr>
     <td width="90">
-      <img src="systems/brio-chamfer/screenshots/00_thumb.png" width="72" />
+      <img src="systems/branching-sticks/00_thumb.png" width="72" />
     </td>
     <td>
-      <strong><a href="systems/brio-chamfer">Brio Rails</a></strong><br/>
-      <sub>by Roger Winkler</sub><br/>
-      <code>construction toys</code> <code>wood</code><br/>
-      <a href="systems/brio-chamfer/aggregation.json">aggregation.json</a> · <a href="systems/brio-chamfer/meta.json">meta.json</a>
+      <strong><a href="systems/branching-sticks">Branching Sticks</a></strong><br/>
+      <sub>by Andrea Rossi</sub><br/>
+      <code>example</code><br/>
+      <a href="systems/branching-sticks/aggregation.json">aggregation.json</a> · <a href="systems/branching-sticks/meta.json">meta.json</a>
     </td>
   </tr>
 </table>
@@ -29,7 +29,25 @@ Collection of reusable Aggregation systems for the Wasp Framework
 <table>
   <tr>
     <td width="90">
-      <img src="systems/corner-shape/screenshots/00_thumb.png" width="72" />
+      <img src="systems/brio-rails/00_thumb.png" width="72" />
+    </td>
+    <td>
+      <strong><a href="systems/brio-rails">Brio Rails</a></strong><br/>
+      <sub>by Roger Winkler</sub><br/>
+      <code>toy</code> <code>construction kit</code> <code>brio</code><br/>
+      <a href="systems/brio-rails/aggregation.json">aggregation.json</a> · <a href="systems/brio-rails/meta.json">meta.json</a>
+    </td>
+  </tr>
+</table>
+      </td>
+    </tr>
+    <tr>
+      <td width="50%" valign="top">
+
+<table>
+  <tr>
+    <td width="90">
+      <img src="systems/corner-shape/00_thumb.png" width="72" />
     </td>
     <td>
       <strong><a href="systems/corner-shape">Corner Shape</a></strong><br/>
@@ -40,40 +58,22 @@ Collection of reusable Aggregation systems for the Wasp Framework
   </tr>
 </table>
       </td>
-    </tr>
-    <tr>
       <td width="50%" valign="top">
 
 <table>
   <tr>
     <td width="90">
-      <img src="systems/gyrobifastigium/screenshots/00_thumb.png" width="72" />
+      <img src="systems/gyrobifastigium/00_thumb.png" width="72" />
     </td>
     <td>
       <strong><a href="systems/gyrobifastigium">Gyrobifastigium</a></strong><br/>
       <sub>by Andrea Rossi</sub><br/>
-      <code>geometry</code> <code>platonic</code><br/>
+      <code>geometry</code> <code>solids</code> <code>space filling</code><br/>
       <a href="systems/gyrobifastigium/aggregation.json">aggregation.json</a> · <a href="systems/gyrobifastigium/meta.json">meta.json</a>
     </td>
   </tr>
 </table>
       </td>
-      <td width="50%" valign="top">
-
-<table>
-  <tr>
-    <td width="90">
-      <img src="systems/octahedra/screenshots/00_thumb.png" width="72" />
-    </td>
-    <td>
-      <strong><a href="systems/octahedra">Octahedra</a></strong><br/>
-      <sub>by Roger Winkler</sub><br/>
-      <code>geometry</code> <code>testing</code><br/>
-      <a href="systems/octahedra/aggregation.json">aggregation.json</a> · <a href="systems/octahedra/meta.json">meta.json</a>
-    </td>
-  </tr>
-</table>
-      </td>
     </tr>
     <tr>
       <td width="50%" valign="top">
@@ -81,13 +81,13 @@ Collection of reusable Aggregation systems for the Wasp Framework
 <table>
   <tr>
     <td width="90">
-      <img src="systems/stacked-sticks/screenshots/00_thumb.png" width="72" />
+      <img src="systems/vertex-octahedra/00_thumb.png" width="72" />
     </td>
     <td>
-      <strong><a href="systems/stacked-sticks">Stacked Sticks</a></strong><br/>
+      <strong><a href="systems/vertex-octahedra">Vertex Octahedra</a></strong><br/>
       <sub>by Andrea Rossi</sub><br/>
-      <code>examples</code> <code>simple</code><br/>
-      <a href="systems/stacked-sticks/aggregation.json">aggregation.json</a> · <a href="systems/stacked-sticks/meta.json">meta.json</a>
+      <code>geometry</code> <code>platonic</code> <code>example</code><br/>
+      <a href="systems/vertex-octahedra/aggregation.json">aggregation.json</a> · <a href="systems/vertex-octahedra/meta.json">meta.json</a>
     </td>
   </tr>
 </table>

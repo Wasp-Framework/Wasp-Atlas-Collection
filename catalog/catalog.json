@@ -1,76 +1,203 @@
 {
-  "generated_at": "2026-07-06T12:38:21.785Z",
+  "generated_at": "2026-08-18T18:43:15.554Z",
   "count": 5,
   "systems": [
     {
-      "slug": "brio-chamfer",
-      "name": "Brio Rails",
-      "description": "Brio rails aggregation with chamfered colliders. Created this example during the development of WaspJS.",
-      "tags": [
-        "construction toys",
-        "wood"
+      "id": "sha256:a35491ff7cc6835cac1a2468790c12d0d43f2713b159d639b32c8773fcb11b0e",
+      "slug": "branching-sticks",
+      "title": "Branching Sticks",
+      "created_at": "2026-08-18T18:30:11.805Z",
+      "status": "pending",
+      "authors": [
+        {
+          "name": "Andrea Rossi",
+          "affiliation": "The Computational Hive",
+          "url": "https://thecomputationalhive.com/"
+        }
       ],
-      "license": "",
-      "author": "Roger Winkler",
-      "thumbnail": "systems/brio-chamfer/screenshots/00_thumb.png",
-      "aggregation_url": "systems/brio-chamfer/aggregation.json",
-      "meta_url": "systems/brio-chamfer/meta.json"
+      "license": {
+        "value": "GPL-3.0"
+      },
+      "description": {
+        "short": "Branching Stick aggregation example from the Wasp Example Files collection.",
+        "long": ""
+      },
+      "tags": [
+        "example"
+      ],
+      "software": "v0.6...",
+      "units": "Millimeters",
+      "metrics": {
+        "parts_total": 2,
+        "rules_total": 100
+      },
+      "files": {
+        "aggregation": "branching-sticks/aggregation.json",
+        "meta": "branching-sticks/meta.json",
+        "thumbnail": "branching-sticks/00_thumb.png"
+      },
+      "source": {
+        "submission": "google-form"
+      }
     },
     {
+      "id": "sha256:d9b5081ce38cfa0e401677c0090f348fbd16ac5af65c8816cd767294299ed841",
+      "slug": "brio-rails",
+      "title": "Brio Rails",
+      "created_at": "2026-08-18T18:17:10.316Z",
+      "status": "pending",
+      "authors": [
+        {
+          "name": "Roger Winkler",
+          "affiliation": "",
+          "url": "https://rogerwinkler.de/"
+        }
+      ],
+      "license": {
+        "value": "MIT"
+      },
+      "description": {
+        "short": "Brio rails aggregation with chamfered colliders. Created this example during the development of WaspJS.",
+        "long": ""
+      },
+      "tags": [
+        "toy",
+        "construction kit",
+        "brio"
+      ],
+      "software": "v0.6...",
+      "units": "Millimeters",
+      "metrics": {
+        "parts_total": 5,
+        "rules_total": 70
+      },
+      "files": {
+        "aggregation": "brio-rails/aggregation.json",
+        "meta": "brio-rails/meta.json",
+        "thumbnail": "brio-rails/00_thumb.png"
+      },
+      "source": {
+        "submission": "google-form"
+      }
+    },
+    {
+      "id": "sha256:5d66a962ca894e64f2363b96b6e8979aafd97dd15f3dea170e7d92f9d7de52e2",
       "slug": "corner-shape",
-      "name": "Corner Shape",
-      "description": "Corner aggregation example.",
+      "title": "Corner Shape",
+      "created_at": "2026-08-18T18:24:01.544Z",
+      "status": "pending",
+      "authors": [
+        {
+          "name": "Andrea Rossi",
+          "affiliation": "The Computational Hive",
+          "url": "https://thecomputationalhive.com/"
+        }
+      ],
+      "license": {
+        "value": "GPL-3.0"
+      },
+      "description": {
+        "short": "Corner shape example from the Wasp Example Files collection.",
+        "long": ""
+      },
       "tags": [
         "examples",
         "simple"
       ],
-      "license": "",
-      "author": "Andrea Rossi",
-      "thumbnail": "systems/corner-shape/screenshots/00_thumb.png",
-      "aggregation_url": "systems/corner-shape/aggregation.json",
-      "meta_url": "systems/corner-shape/meta.json"
+      "software": "v0.6...",
+      "units": "Millimeters",
+      "metrics": {
+        "parts_total": 1,
+        "rules_total": 16
+      },
+      "files": {
+        "aggregation": "corner-shape/aggregation.json",
+        "meta": "corner-shape/meta.json",
+        "thumbnail": "corner-shape/00_thumb.png"
+      },
+      "source": {
+        "submission": "google-form"
+      }
     },
     {
+      "id": "sha256:923ee2e22333b88a50592c8158e159f6432e3718e168a8b24af14f37f083b921",
       "slug": "gyrobifastigium",
-      "name": "Gyrobifastigium",
-      "description": "Space filling aggregation of Gyrobifastigium solids",
+      "title": "Gyrobifastigium",
+      "created_at": "2026-08-18T18:36:59.692Z",
+      "status": "pending",
+      "authors": [
+        {
+          "name": "Andrea Rossi",
+          "affiliation": "The Computational Hive",
+          "url": "https://thecomputationalhive.com/"
+        }
+      ],
+      "license": {
+        "value": "GPL-3.0"
+      },
+      "description": {
+        "short": "Space filling aggregation of Gyrobifastigium solids, from the Wasp Example Files collection.",
+        "long": ""
+      },
       "tags": [
         "geometry",
-        "platonic"
+        "solids",
+        "space filling"
       ],
-      "license": "MIT",
-      "author": "Andrea Rossi",
-      "thumbnail": "systems/gyrobifastigium/screenshots/00_thumb.png",
-      "aggregation_url": "systems/gyrobifastigium/aggregation.json",
-      "meta_url": "systems/gyrobifastigium/meta.json"
+      "software": "v0.6...",
+      "units": "Centimeters",
+      "metrics": {
+        "parts_total": 1,
+        "rules_total": 24
+      },
+      "files": {
+        "aggregation": "gyrobifastigium/aggregation.json",
+        "meta": "gyrobifastigium/meta.json",
+        "thumbnail": "gyrobifastigium/00_thumb.png"
+      },
+      "source": {
+        "submission": "google-form"
+      }
     },
     {
-      "slug": "octahedra",
-      "name": "Octahedra",
-      "description": "Default example",
+      "id": "sha256:8c90ea0e2024a2283ec8850cd63c79153b41fa2dd7b6ddc7e70adc2b5121278a",
+      "slug": "vertex-octahedra",
+      "title": "Vertex Octahedra",
+      "created_at": "2026-08-18T18:28:23.018Z",
+      "status": "pending",
+      "authors": [
+        {
+          "name": "Andrea Rossi",
+          "affiliation": "The Computational Hive",
+          "url": "https://thecomputationalhive.com/"
+        }
+      ],
+      "license": {
+        "value": "GPL-3.0"
+      },
+      "description": {
+        "short": "Platonic Octahedra solids aggregation, joined at the vertices. From the Wasp Example Files collection.",
+        "long": ""
+      },
       "tags": [
         "geometry",
-        "testing"
+        "platonic",
+        "example"
       ],
-      "license": "MIT",
-      "author": "Roger Winkler",
-      "thumbnail": "systems/octahedra/screenshots/00_thumb.png",
-      "aggregation_url": "systems/octahedra/aggregation.json",
-      "meta_url": "systems/octahedra/meta.json"
-    },
-    {
-      "slug": "stacked-sticks",
-      "name": "Stacked Sticks",
-      "description": "Stick aggregation example from WASP basic examples.",
-      "tags": [
-        "examples",
-        "simple"
-      ],
-      "license": "",
-      "author": "Andrea Rossi",
-      "thumbnail": "systems/stacked-sticks/screenshots/00_thumb.png",
-      "aggregation_url": "systems/stacked-sticks/aggregation.json",
-      "meta_url": "systems/stacked-sticks/meta.json"
+      "software": "v0.6...",
+      "units": "Millimeters",
+      "metrics": {
+        "parts_total": 1,
+        "rules_total": 6
+      },
+      "files": {
+        "aggregation": "vertex-octahedra/aggregation.json",
+        "meta": "vertex-octahedra/meta.json",
+        "thumbnail": "vertex-octahedra/00_thumb.png"
+      },
+      "source": {
+        "submission": "google-form"
+      }
     }
   ]
 }

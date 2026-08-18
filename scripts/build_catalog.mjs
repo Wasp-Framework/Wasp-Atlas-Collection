@@ -28,6 +28,27 @@ function safeSlugFromFolder(folderName) {
   return folderName;
 }
 
+function asRepoPath(...parts) {
+  return parts.join("/");
+}
+
+function validateSystemFile(sysDir, slug, value, key, fallback) {
+  const declared = value ?? `${slug}/${fallback}`;
+  assert(typeof declared === "string" && declared.length > 0,
+    `Invalid files.${key} in systems/${slug}/meta.json`);
+
+  const normalized = declared.replace(/\\/g, "/");
+  assert(normalized === `${slug}/${path.posix.basename(normalized)}`,
+    `files.${key} in systems/${slug}/meta.json must point inside the system folder`);
+
+  const filePath = path.join(sysDir, path.posix.basename(normalized));
+  assert(exists(filePath), `Missing ${path.relative(REPO_ROOT, filePath)}`);
+  return {
+    repoUrl: asRepoPath("systems", normalized),
+    localUrl: path.posix.basename(normalized)
+  };
+}
+
 function buildSystemsIndex() {
   assert(exists(SYSTEMS_DIR), `Missing folder: ${SYSTEMS_DIR}`);
 
@@ -42,33 +63,42 @@ function buildSystemsIndex() {
     const slug = safeSlugFromFolder(folder);
     const sysDir = path.join(SYSTEMS_DIR, folder);
 
-    const aggregationPath = path.join(sysDir, "aggregation.json");
     const metaPath = path.join(sysDir, "meta.json");
-    const thumbPath = path.join(sysDir, "00_thumb.png");
-
-    // required files
-    assert(exists(aggregationPath), `Missing ${path.relative(REPO_ROOT, aggregationPath)}`);
     assert(exists(metaPath), `Missing ${path.relative(REPO_ROOT, metaPath)}`);
-    assert(exists(thumbPath), `Missing ${path.relative(REPO_ROOT, thumbPath)} (required thumbnail)`);
 
     const meta = readJson(metaPath);
+    assert(meta.slug === slug,
+      `Slug in systems/${slug}/meta.json must match its folder name`);
 
-    const name = meta.name ?? slug;
-    const description = meta.description ?? "";
+    const name = meta.title ?? slug;
+    const description = meta.description?.short ?? "";
     const tags = Array.isArray(meta.tags) ? meta.tags : [];
-    const license = meta.license ?? "";
-    const author = meta.author ?? "";
+    const license = meta.license?.value ?? "";
+    const authors = Array.isArray(meta.authors) ? meta.authors : [];
+    const author = authors.map(item => item?.name).filter(Boolean).join(", ");
+    const files = meta.files ?? {};
+    const thumbnail = validateSystemFile(sysDir, slug, files.thumbnail, "thumbnail", "00_thumb.png");
+    const aggregation = validateSystemFile(sysDir, slug, files.aggregation, "aggregation", "aggregation.json");
+    const metaFile = validateSystemFile(sysDir, slug, files.meta, "meta", "meta.json");
 
     systems.push({
+      meta,
       slug,
       name,
       description,
       tags,
       license,
+      authors,
       author,
-      thumbnail: `systems/${slug}/screenshots/00_thumb.png`,
-      aggregation_url: `systems/${slug}/aggregation.json`,
-      meta_url: `systems/${slug}/meta.json`
+      software: meta.software ?? "",
+      units: meta.units ?? "",
+      metrics: meta.metrics ?? {},
+      thumbnail: thumbnail.repoUrl,
+      thumbnailLocal: thumbnail.localUrl,
+      aggregation_url: aggregation.repoUrl,
+      aggregationLocal: aggregation.localUrl,
+      meta_url: metaFile.repoUrl,
+      metaLocal: metaFile.localUrl
     });
   }
 
@@ -81,7 +111,7 @@ function writeCatalog(systems) {
   const catalog = {
     generated_at: new Date().toISOString(),
     count: systems.length,
-    systems
+    systems: systems.map(system => system.meta)
   };
 
   fs.writeFileSync(CATALOG_PATH, JSON.stringify(catalog, null, 2) + "\n", "utf8");
@@ -89,6 +119,18 @@ function writeCatalog(systems) {
 
 function mdEscape(text) {
   return String(text).replace(/\|/g, "\\|").trim();
+}
+
+function htmlEscape(text) {
+  return String(text)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function markdownLink(label, url) {
+  return url ? `[${mdEscape(label)}](${url})` : mdEscape(label);
 }
 
 function buildSystemReadme(system) {
@@ -100,8 +142,8 @@ function buildSystemReadme(system) {
     ? system.description
     : "_No description provided._";
 
-  const author = system.author
-    ? system.author
+  const author = system.authors.length
+    ? system.authors.map(item => markdownLink(item.name, item.url)).join(", ")
     : "_Unknown author_";
 
   const license = system.license
@@ -110,7 +152,7 @@ function buildSystemReadme(system) {
 
   return `# ${system.name}
 
-![${system.name}](screenshots/00_thumb.png)
+![${system.name}](${system.thumbnailLocal})
 
 ## Description
 
@@ -124,11 +166,15 @@ ${description}
 | Author | ${author} |
 | License | ${license} |
 | Tags | ${tags} |
+| Software | ${system.software || "_Not specified_"} |
+| Units | ${system.units || "_Not specified_"} |
+| Parts | ${system.metrics?.parts_total ?? "_Not specified_"} |
+| Rules | ${system.metrics?.rules_total ?? "_Not specified_"} |
 
 ## Files
 
-- [aggregation.json](aggregation.json)
-- [meta.json](meta.json)
+- [aggregation.json](${system.aggregationLocal})
+- [meta.json](${system.metaLocal})
 
 ---
 
@@ -149,11 +195,11 @@ function writeSystemReadmes(systems) {
 
 function buildSystemCard(s) {
   const tags = s.tags.length
-    ? s.tags.map(t => `<code>${mdEscape(t)}</code>`).join(" ")
+    ? s.tags.map(t => `<code>${htmlEscape(t)}</code>`).join(" ")
     : "";
 
   const author = s.author
-    ? `<sub>by ${mdEscape(s.author)}</sub><br/>`
+    ? `<sub>by ${htmlEscape(s.author)}</sub><br/>`
     : "";
 
   const folderUrl = `systems/${s.slug}`;
@@ -165,7 +211,7 @@ function buildSystemCard(s) {
       <img src="${s.thumbnail}" width="72" />
     </td>
     <td>
-      <strong><a href="${folderUrl}">${mdEscape(s.name)}</a></strong><br/>
+      <strong><a href="${folderUrl}">${htmlEscape(s.name)}</a></strong><br/>
       ${author}
       ${tags ? `${tags}<br/>` : ""}
       <a href="${s.aggregation_url}">aggregation.json</a> · <a href="${s.meta_url}">meta.json</a>
