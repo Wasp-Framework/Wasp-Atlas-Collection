@@ -1,16 +1,40 @@
 {
+  "id": "sha256:923ee2e22333b88a50592c8158e159f6432e3718e168a8b24af14f37f083b921",
   "slug": "gyrobifastigium",
-  "name": "Gyrobifastigium",
-  "description": "Space filling aggregation of Gyrobifastigium solids",
-  "tags": ["geometry", "platonic"],
-  "author": "Andrea Rossi",
-  "aggregation": "aggregation.json",
-  "license": "MIT",
-  "units": "mm",
-  "version": "1.0.0",
-  "created": "2026-04-14",
-  "thumbnail": "screenshots/00_thumb.png",
-  "byPart": {
-    "GY": "#47d15e"
+  "title": "Gyrobifastigium",
+  "created_at": "2026-08-18T18:36:59.692Z",
+  "status": "pending",
+  "authors": [
+    {
+      "name": "Andrea Rossi",
+      "affiliation": "The Computational Hive",
+      "url": "https://thecomputationalhive.com/"
+    }
+  ],
+  "license": {
+    "value": "GPL-3.0"
+  },
+  "description": {
+    "short": "Space filling aggregation of Gyrobifastigium solids, from the Wasp Example Files collection.",
+    "long": ""
+  },
+  "tags": [
+    "geometry",
+    "solids",
+    "space filling"
+  ],
+  "software": "v0.6...",
+  "units": "Centimeters",
+  "metrics": {
+    "parts_total": 1,
+    "rules_total": 24
+  },
+  "files": {
+    "aggregation": "gyrobifastigium/aggregation.json",
+    "meta": "gyrobifastigium/meta.json",
+    "thumbnail": "gyrobifastigium/00_thumb.png"
+  },
+  "source": {
+    "submission": "google-form"
   }
 }

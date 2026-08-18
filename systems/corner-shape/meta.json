@@ -1,16 +1,39 @@
 {
+  "id": "sha256:5d66a962ca894e64f2363b96b6e8979aafd97dd15f3dea170e7d92f9d7de52e2",
   "slug": "corner-shape",
-  "name": "Corner Shape",
-  "description": "Corner aggregation example.",
-  "tags": ["examples", "simple"],
-  "author": "Andrea Rossi",
-  "aggregation": "aggregation.json",
-  "license": "",
-  "units": "mm",
-  "version": "1.0.0",
-  "created": "2026-03-02",
-  "thumbnail": "screenshots/00_thumb.png",
-  "byPart": {
-    "L": "#00e5ff"
+  "title": "Corner Shape",
+  "created_at": "2026-08-18T18:24:01.544Z",
+  "status": "pending",
+  "authors": [
+    {
+      "name": "Andrea Rossi",
+      "affiliation": "The Computational Hive",
+      "url": "https://thecomputationalhive.com/"
+    }
+  ],
+  "license": {
+    "value": "GPL-3.0"
+  },
+  "description": {
+    "short": "Corner shape example from the Wasp Example Files collection.",
+    "long": ""
+  },
+  "tags": [
+    "examples",
+    "simple"
+  ],
+  "software": "v0.6...",
+  "units": "Millimeters",
+  "metrics": {
+    "parts_total": 1,
+    "rules_total": 16
+  },
+  "files": {
+    "aggregation": "corner-shape/aggregation.json",
+    "meta": "corner-shape/meta.json",
+    "thumbnail": "corner-shape/00_thumb.png"
+  },
+  "source": {
+    "submission": "google-form"
   }
 }

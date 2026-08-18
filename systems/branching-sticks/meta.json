@@ -1,0 +1,38 @@
+{
+  "id": "sha256:a35491ff7cc6835cac1a2468790c12d0d43f2713b159d639b32c8773fcb11b0e",
+  "slug": "branching-sticks",
+  "title": "Branching Sticks",
+  "created_at": "2026-08-18T18:30:11.805Z",
+  "status": "pending",
+  "authors": [
+    {
+      "name": "Andrea Rossi",
+      "affiliation": "The Computational Hive",
+      "url": "https://thecomputationalhive.com/"
+    }
+  ],
+  "license": {
+    "value": "GPL-3.0"
+  },
+  "description": {
+    "short": "Branching Stick aggregation example from the Wasp Example Files collection.",
+    "long": ""
+  },
+  "tags": [
+    "example"
+  ],
+  "software": "v0.6...",
+  "units": "Millimeters",
+  "metrics": {
+    "parts_total": 2,
+    "rules_total": 100
+  },
+  "files": {
+    "aggregation": "branching-sticks/aggregation.json",
+    "meta": "branching-sticks/meta.json",
+    "thumbnail": "branching-sticks/00_thumb.png"
+  },
+  "source": {
+    "submission": "google-form"
+  }
+}

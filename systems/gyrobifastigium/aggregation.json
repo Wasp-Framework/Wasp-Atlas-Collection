@@ -1,6 +1,7 @@
 {
     "field": null, 
-    "name": "myAggregation", 
+    "name": "myAggregation",
+	"object_type": "Aggregation",	
     "parts": [
         {
             "geometry": {
