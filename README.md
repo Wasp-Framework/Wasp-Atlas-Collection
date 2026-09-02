@@ -17,7 +17,7 @@ Collection of reusable Aggregation systems for the Wasp Framework
     </td>
     <td>
       <strong><a href="systems/bike-frames-pattern-01">Bike Frames - Pattern 01</a></strong><br/>
-      <sub>by Lukas Allner, Daniela Krönerth, Naomi Neururer, Andrea Rossi</sub><br/>
+      <sub>by Lukas Allner, Daniela Kröhnert, Naomi Neururer, Andrea Rossi</sub><br/>
       <code>inventorics</code> <code>reuse</code> <code>bikes</code><br/>
       <a href="systems/bike-frames-pattern-01/aggregation.json">aggregation.json</a> · <a href="systems/bike-frames-pattern-01/meta.json">meta.json</a>
     </td>
