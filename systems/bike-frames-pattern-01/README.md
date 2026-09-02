@@ -11,7 +11,7 @@ Aggregation of bicycle frame using a pattern of alternating two-bikes sets. Deve
 | Field | Value |
 |---|---|
 | Slug | `bike-frames-pattern-01` |
-| Author | [Lukas Allner, Daniela Krönerth, Naomi Neururer, Andrea Rossi](https://inventorics.com) |
+| Author | [Lukas Allner, Daniela Kröhnert, Naomi Neururer, Andrea Rossi](https://inventorics.com) |
 | License | CC-BY-SA-4.0 |
 | Tags | `inventorics` `reuse` `bikes` |
 | Software | v0.7... |

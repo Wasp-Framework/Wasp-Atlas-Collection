@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T14:52:08.617Z",
+  "generated_at": "2026-09-02T15:20:09.568Z",
   "count": 6,
   "systems": [
     {
@@ -10,7 +10,7 @@
       "status": "pending",
       "authors": [
         {
-          "name": "Lukas Allner, Daniela Krönerth, Naomi Neururer, Andrea Rossi",
+          "name": "Lukas Allner, Daniela Kröhnert, Naomi Neururer, Andrea Rossi",
           "affiliation": "University of Applied Arts Vienna",
           "url": "https://inventorics.com"
         }
