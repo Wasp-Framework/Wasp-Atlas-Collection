@@ -1,0 +1,40 @@
+{
+  "id": "sha256:5d698aca2e08342936a342f50d976cb1092cf47b84e3378f02134c8c6d94bf7b",
+  "slug": "bike-frames-pattern-01",
+  "title": "Bike Frames - Pattern 01",
+  "created_at": "2026-09-02T14:50:12.328Z",
+  "status": "pending",
+  "authors": [
+    {
+      "name": "Lukas Allner, Daniela Krönerth, Naomi Neururer, Andrea Rossi",
+      "affiliation": "University of Applied Arts Vienna",
+      "url": "https://inventorics.com"
+    }
+  ],
+  "license": {
+    "value": "CC-BY-SA-4.0"
+  },
+  "description": {
+    "short": "Aggregation of bicycle frame using a pattern of alternating two-bikes sets. Developed as part of the PEEK Inventorics Project (FWF AR 730-G)",
+    "long": ""
+  },
+  "tags": [
+    "inventorics",
+    "reuse",
+    "bikes"
+  ],
+  "software": "v0.7...",
+  "units": "Centimeters",
+  "metrics": {
+    "parts_total": 1,
+    "rules_total": 6
+  },
+  "files": {
+    "aggregation": "bike-frames-pattern-01/aggregation.json",
+    "meta": "bike-frames-pattern-01/meta.json",
+    "thumbnail": "bike-frames-pattern-01/00_thumb.png"
+  },
+  "source": {
+    "submission": "google-form"
+  }
+}
