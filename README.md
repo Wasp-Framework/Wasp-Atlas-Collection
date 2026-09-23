@@ -115,6 +115,22 @@ Collection of reusable Aggregation systems for the Wasp Framework
 <table>
   <tr>
     <td width="90">
+      <img src="systems/rhombic-panels/00_thumb.png" width="72" />
+    </td>
+    <td>
+      <strong><a href="systems/rhombic-panels">Rhombic Panels</a></strong><br/>
+      <sub>by Lukas Allner, Daniela Kröhnert, Naomi Neururer, Andrea Rossi</sub><br/>
+      <code>inventorics</code> <code>space filling</code> <code>solids</code> <code>panels</code><br/>
+      <a href="systems/rhombic-panels/aggregation.json">aggregation.json</a> · <a href="systems/rhombic-panels/meta.json">meta.json</a>
+    </td>
+  </tr>
+</table>
+      </td>
+      <td width="50%" valign="top">
+
+<table>
+  <tr>
+    <td width="90">
       <img src="systems/sommerville-tetrahedra-no-1-multiple-elements/00_thumb.png" width="72" />
     </td>
     <td>
@@ -126,6 +142,8 @@ Collection of reusable Aggregation systems for the Wasp Framework
   </tr>
 </table>
       </td>
+    </tr>
+    <tr>
       <td width="50%" valign="top">
 
 <table>
@@ -141,6 +159,9 @@ Collection of reusable Aggregation systems for the Wasp Framework
     </td>
   </tr>
 </table>
+      </td>
+      <td width="50%" valign="top">
+&nbsp;
       </td>
     </tr>
   </tbody>
