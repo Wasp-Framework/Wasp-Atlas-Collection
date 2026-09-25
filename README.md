@@ -149,6 +149,22 @@ Collection of reusable Aggregation systems for the Wasp Framework
 <table>
   <tr>
     <td width="90">
+      <img src="systems/truncated-octahedron/00_thumb.png" width="72" />
+    </td>
+    <td>
+      <strong><a href="systems/truncated-octahedron">Truncated Octahedron</a></strong><br/>
+      <sub>by Andrea Rossi</sub><br/>
+      <code>geometry</code> <code>platonic</code> <code>space filling</code> <code>example</code><br/>
+      <a href="systems/truncated-octahedron/aggregation.json">aggregation.json</a> · <a href="systems/truncated-octahedron/meta.json">meta.json</a>
+    </td>
+  </tr>
+</table>
+      </td>
+      <td width="50%" valign="top">
+
+<table>
+  <tr>
+    <td width="90">
       <img src="systems/vertex-octahedra/00_thumb.png" width="72" />
     </td>
     <td>
@@ -159,9 +175,6 @@ Collection of reusable Aggregation systems for the Wasp Framework
     </td>
   </tr>
 </table>
-      </td>
-      <td width="50%" valign="top">
-&nbsp;
       </td>
     </tr>
   </tbody>

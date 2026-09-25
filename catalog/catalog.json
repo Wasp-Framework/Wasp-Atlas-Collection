@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-23T13:44:44.552Z",
-  "count": 9,
+  "generated_at": "2026-09-25T11:39:47.667Z",
+  "count": 10,
   "systems": [
     {
       "id": "sha256:5d698aca2e08342936a342f50d976cb1092cf47b84e3378f02134c8c6d94bf7b",
@@ -315,6 +315,46 @@
         "aggregation": "sommerville-tetrahedra-no-1-multiple-elements/aggregation.json",
         "meta": "sommerville-tetrahedra-no-1-multiple-elements/meta.json",
         "thumbnail": "sommerville-tetrahedra-no-1-multiple-elements/00_thumb.png"
+      },
+      "source": {
+        "submission": "google-form"
+      }
+    },
+    {
+      "id": "sha256:59c552f18628629f5664eaaa0ae341d7f3f0d217b3d7db19c7415a9b7a0556d7",
+      "slug": "truncated-octahedron",
+      "title": "Truncated Octahedron",
+      "created_at": "2026-09-25T11:38:17.360Z",
+      "status": "pending",
+      "authors": [
+        {
+          "name": "Andrea Rossi",
+          "affiliation": "The Computational Hive"
+        }
+      ],
+      "license": {
+        "value": "GPL-3.0"
+      },
+      "description": {
+        "short": "Space filling aggregation of truncated platonic octahedra solids, from the Wasp Example Files collection.",
+        "long": ""
+      },
+      "tags": [
+        "geometry",
+        "platonic",
+        "space filling",
+        "example"
+      ],
+      "software": "v0.7...",
+      "units": "Centimeters",
+      "metrics": {
+        "parts_total": 1,
+        "rules_total": 14
+      },
+      "files": {
+        "aggregation": "truncated-octahedron/aggregation.json",
+        "meta": "truncated-octahedron/meta.json",
+        "thumbnail": "truncated-octahedron/00_thumb.png"
       },
       "source": {
         "submission": "google-form"
