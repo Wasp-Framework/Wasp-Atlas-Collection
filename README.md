@@ -115,6 +115,22 @@ Collection of reusable Aggregation systems for the Wasp Framework
 <table>
   <tr>
     <td width="90">
+      <img src="systems/interlocking-bricks/00_thumb.png" width="72" />
+    </td>
+    <td>
+      <strong><a href="systems/interlocking-bricks">Interlocking Bricks</a></strong><br/>
+      <sub>by Andrea Rossi</sub><br/>
+      <code>interlocking</code> <code>robotic assembly</code> <code>brick</code><br/>
+      <a href="systems/interlocking-bricks/aggregation.json">aggregation.json</a> · <a href="systems/interlocking-bricks/meta.json">meta.json</a>
+    </td>
+  </tr>
+</table>
+      </td>
+      <td width="50%" valign="top">
+
+<table>
+  <tr>
+    <td width="90">
       <img src="systems/rhombic-panels/00_thumb.png" width="72" />
     </td>
     <td>
@@ -126,6 +142,8 @@ Collection of reusable Aggregation systems for the Wasp Framework
   </tr>
 </table>
       </td>
+    </tr>
+    <tr>
       <td width="50%" valign="top">
 
 <table>
@@ -142,8 +160,6 @@ Collection of reusable Aggregation systems for the Wasp Framework
   </tr>
 </table>
       </td>
-    </tr>
-    <tr>
       <td width="50%" valign="top">
 
 <table>
@@ -160,6 +176,8 @@ Collection of reusable Aggregation systems for the Wasp Framework
   </tr>
 </table>
       </td>
+    </tr>
+    <tr>
       <td width="50%" valign="top">
 
 <table>
@@ -175,6 +193,9 @@ Collection of reusable Aggregation systems for the Wasp Framework
     </td>
   </tr>
 </table>
+      </td>
+      <td width="50%" valign="top">
+&nbsp;
       </td>
     </tr>
   </tbody>

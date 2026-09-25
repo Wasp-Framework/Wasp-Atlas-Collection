@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-25T11:39:47.667Z",
-  "count": 10,
+  "generated_at": "2026-09-25T11:53:27.476Z",
+  "count": 11,
   "systems": [
     {
       "id": "sha256:5d698aca2e08342936a342f50d976cb1092cf47b84e3378f02134c8c6d94bf7b",
@@ -234,6 +234,46 @@
         "aggregation": "gyrobifastigium/aggregation.json",
         "meta": "gyrobifastigium/meta.json",
         "thumbnail": "gyrobifastigium/00_thumb.png"
+      },
+      "source": {
+        "submission": "google-form"
+      }
+    },
+    {
+      "id": "sha256:9d5b991bd17b62fab3d2dc2c9aeeb47610fd2fe09542c8f86a6d4402d2ed804a",
+      "slug": "interlocking-bricks",
+      "title": "Interlocking Bricks",
+      "created_at": "2026-09-25T11:51:34.724Z",
+      "status": "pending",
+      "authors": [
+        {
+          "name": "Andrea Rossi",
+          "affiliation": "DDU Digital Design Unit, TU Darmstadt",
+          "url": "https://www.dg.architektur.tu-darmstadt.de"
+        }
+      ],
+      "license": {
+        "value": "GPL-3.0"
+      },
+      "description": {
+        "short": "Simple interlocking brick for robotic assembly. Used for the paper \"Collaborative Assembly of Digital Materials\" (Rossi & Tessmann, 2017)",
+        "long": ""
+      },
+      "tags": [
+        "interlocking",
+        "robotic assembly",
+        "brick"
+      ],
+      "software": "v0.7...",
+      "units": "Millimeters",
+      "metrics": {
+        "parts_total": 1,
+        "rules_total": 5
+      },
+      "files": {
+        "aggregation": "interlocking-bricks/aggregation.json",
+        "meta": "interlocking-bricks/meta.json",
+        "thumbnail": "interlocking-bricks/00_thumb.png"
       },
       "source": {
         "submission": "google-form"
