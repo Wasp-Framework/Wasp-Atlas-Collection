@@ -115,6 +115,22 @@ Collection of reusable Aggregation systems for the Wasp Framework
 <table>
   <tr>
     <td width="90">
+      <img src="systems/flexnode-v2/00_thumb.png" width="72" />
+    </td>
+    <td>
+      <strong><a href="systems/flexnode-v2">Flex.Node v2</a></strong><br/>
+      <sub>by Naomi Neururer, Daniela Krönerth, Andrea Rossi, Lukas Allner</sub><br/>
+      <code>inventorics</code> <code>reuse</code> <code>upcycling</code> <code>plastic bottles</code> <code>flexnode</code><br/>
+      <a href="systems/flexnode-v2/aggregation.json">aggregation.json</a> · <a href="systems/flexnode-v2/meta.json">meta.json</a>
+    </td>
+  </tr>
+</table>
+      </td>
+      <td width="50%" valign="top">
+
+<table>
+  <tr>
+    <td width="90">
       <img src="systems/gyrobifastigium/00_thumb.png" width="72" />
     </td>
     <td>
@@ -126,6 +142,8 @@ Collection of reusable Aggregation systems for the Wasp Framework
   </tr>
 </table>
       </td>
+    </tr>
+    <tr>
       <td width="50%" valign="top">
 
 <table>
@@ -142,8 +160,6 @@ Collection of reusable Aggregation systems for the Wasp Framework
   </tr>
 </table>
       </td>
-    </tr>
-    <tr>
       <td width="50%" valign="top">
 
 <table>
@@ -160,6 +176,8 @@ Collection of reusable Aggregation systems for the Wasp Framework
   </tr>
 </table>
       </td>
+    </tr>
+    <tr>
       <td width="50%" valign="top">
 
 <table>
@@ -176,8 +194,6 @@ Collection of reusable Aggregation systems for the Wasp Framework
   </tr>
 </table>
       </td>
-    </tr>
-    <tr>
       <td width="50%" valign="top">
 
 <table>
@@ -194,6 +210,8 @@ Collection of reusable Aggregation systems for the Wasp Framework
   </tr>
 </table>
       </td>
+    </tr>
+    <tr>
       <td width="50%" valign="top">
 
 <table>
@@ -209,6 +227,9 @@ Collection of reusable Aggregation systems for the Wasp Framework
     </td>
   </tr>
 </table>
+      </td>
+      <td width="50%" valign="top">
+&nbsp;
       </td>
     </tr>
   </tbody>
