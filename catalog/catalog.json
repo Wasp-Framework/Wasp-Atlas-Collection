@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-25T11:53:27.476Z",
-  "count": 11,
+  "generated_at": "2026-11-04T14:53:29.458Z",
+  "count": 12,
   "systems": [
     {
       "id": "sha256:5d698aca2e08342936a342f50d976cb1092cf47b84e3378f02134c8c6d94bf7b",
@@ -194,6 +194,48 @@
         "aggregation": "corner-shape/aggregation.json",
         "meta": "corner-shape/meta.json",
         "thumbnail": "corner-shape/00_thumb.png"
+      },
+      "source": {
+        "submission": "google-form"
+      }
+    },
+    {
+      "id": "sha256:ba955a485da5def9bfc713365948acc78ee34bc87eadeb5035e68069db4c0969",
+      "slug": "flexnode-v1",
+      "title": "Flex.Node v1",
+      "created_at": "2026-11-04T14:49:06.328Z",
+      "status": "pending",
+      "authors": [
+        {
+          "name": "Naomi Neururer, Daniela Krönerth, Andrea Rossi, Lukas Allner",
+          "affiliation": "University of Applied Arts Vienna",
+          "url": "https://inventorics.com/"
+        }
+      ],
+      "license": {
+        "value": "CC-BY-SA-4.0"
+      },
+      "description": {
+        "short": "A construction kit built from recycled detergent bottles, custom-designed 3D-printed caps, and standard PVC pipes. Developed as part of the PEEK Inventorics Project (FWF AR 730-G)",
+        "long": ""
+      },
+      "tags": [
+        "inventorics",
+        "reuse",
+        "upcycling",
+        "plastic bottles",
+        "flexnode"
+      ],
+      "software": "v0.7...",
+      "units": "Millimeters",
+      "metrics": {
+        "parts_total": 15,
+        "rules_total": 1920
+      },
+      "files": {
+        "aggregation": "flexnode-v1/aggregation.json",
+        "meta": "flexnode-v1/meta.json",
+        "thumbnail": "flexnode-v1/00_thumb.png"
       },
       "source": {
         "submission": "google-form"
